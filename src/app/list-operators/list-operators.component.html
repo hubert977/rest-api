@@ -1,0 +1,21 @@
+<section class="container-data">
+  <mat-grid-list cols="1" rowHeight="2:1">
+    <dx-data-grid [dataSource]="value" keyExpr="ID">
+      <dxo-export [enabled]="true" fileName="Employees" [allowExportSelectedData]="true"></dxo-export>
+      <dxo-selection mode="multiple"></dxo-selection>
+      <dxo-paging
+        [pageSize]="10"
+      ></dxo-paging>
+      <dxo-filter-row
+        [visible]="true"
+      ></dxo-filter-row>
+    </dx-data-grid>
+  </mat-grid-list>
+</section>
+<section class="container-delete-data">
+  <button class="delete-button" (click)="deleteOperator()" mat-flat-button color="warn">USUŃ</button>
+</section>
+<section class="row choose-file-row">
+  <input type="file" class="file" id="file" (change)="onFileChange($event)" multiple="false"  />
+  <label class="choose-file-label" mat-flat-button for="file">Wybierz plik</label>
+</section>

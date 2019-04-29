@@ -1,0 +1,23 @@
+class jsonForm {
+  public ID: number;
+  public guid: string;
+  public ARCHIVAL: number;
+  public name: string;
+  public surname: string;
+  public code: string;
+  public card_number: string;
+  public password: string;
+  public permission: number;
+  public auto_workmode_change: number;
+  public last_auto_workmodemode: number;
+  public mode: number;
+  public temporary_password: number;
+  public active: number;
+  public DEVIATION_THRESHOLD_MAX_PERCENT: number;
+  public DEVIATION_THRESHOLD_MIN_PERCENT: number;
+  public SCALE_SERIAL: string;
+  public DEVICE_GUID: string;
+  public POSTED_RCLOUD: number;
+  public JSON_REPORT: string;
+
+}

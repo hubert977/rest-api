@@ -1,0 +1,24 @@
+<section class="add-operators">
+  <section class="add-operators-container">
+    <form class="add-operators-form" [formGroup]="jsonForm" (ngSubmit)="submitJson()">
+    <div class="example-container">
+      <mat-form-field>
+        <input matInput formControlName="ID" type="number" placeholder="Id">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="guid" placeholder="guid">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="ARCHIVAL" type="number" placeholder="Archival">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="name" placeholder="Name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="surname" placeholder="Surname">
+      </mat-form-field>
+    </div>
+    </form>
+    <button class="send" mat-raised-button type="submit" (click)="submitJson()" color="primary">Wyślij</button>
+  </section>
+</section>
